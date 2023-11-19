@@ -23,7 +23,7 @@ namespace myfinance_web_dotnet_service
            else 
            {
                 dbSet.Attach(Entidade);
-                 _dbContext.Entry(Entidade).State = EntityState.Modified;
+                _dbContext.Entry(Entidade).State = EntityState.Modified;
            }
            _dbContext.SaveChanges();
         }
